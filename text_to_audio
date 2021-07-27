@@ -1,0 +1,10 @@
+from gtts import gTTs
+#pip install gtts
+from playsound import playsound
+#pip install playsound
+audio = 'speech.mp3'
+language = 'en'
+sp = gTTs(text="enter the text file you want to convert into audio",
+           lang= language,slow=false)
+sp.save(audio)
+playsound(audio)
